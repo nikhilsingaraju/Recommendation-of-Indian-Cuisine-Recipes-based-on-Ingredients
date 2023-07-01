@@ -1,0 +1,151 @@
+{% extends 'foodcourtbase.html'%}
+{% load static %}
+{% block contents %}
+
+<!-- banner part start-->
+    <section class="banner_part">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="banner_text">
+                        <div class="banner_text_iner">
+                                <h2>Available Items: </h2>
+                            <table border="2px">
+                                <tr>
+                                    <th>S.NO</th>
+                                    <th>Food</th>
+                                    <th>Recipes</th>
+                                    <th>Ingredients</th>
+                                </tr>
+                                    <tr>
+                                        <td align="center">1</td>
+                                        <td><img src="{% static 'images/availableitems/item_1.jpg' %}" alt="" width="75"></td>
+                                        <td>Murg Makhani (butter chicken)</td>
+                                        <td align="center"><a href="/murgmakhani/availableitem" style="color:Darkgreen">View</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center">2</td>
+                                        <td><img src="{% static 'images/availableitems/item_2.jpg' %}" alt="" width="75"></td>
+                                        <td>Rogan Josh (Red Lamb)</td>
+                                        <td align="center"><a href="/RoganJosh/availableitem" style="color:Darkgreen">View</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center">3</td>
+                                        <td><img src="{% static 'images/availableitems/item_3.jpg' %}" alt="" width="75"></td>
+                                        <td>Malai Kofta</td>
+                                        <td align="center"><a href="/MalaiKofta/availableitem" style="color:Darkgreen">View</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center">4</td>
+                                        <td><img src="{% static 'images/availableitems/item_4.jpg' %}" alt="" width="75"></td>
+                                        <td>Papdi Chaat</td>
+                                        <td align="center"><a href="/PapdiChaat/availableitem" style="color:Darkgreen">View</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center">5</td>
+                                        <td><img src="{% static 'images/availableitems/item_5.jpg' %}" alt="" width="75"></td>
+                                        <td> Dhokla</td>
+                                        <td align="center"><a href="/Dhokla/availableitem" style="color:Darkgreen">View</a></td>
+                                    </tr>
+                                     <tr>
+                                        <td align="center">6</td>
+                                        <td><img src="{% static 'images/availableitems/item_6.jpg' %}" alt="" width="75"></td>
+                                        <td>Chole (Chickpea Curry)</td>
+                                        <td align="center"><a href="/Chole/availableitem" style="color:Darkgreen">View</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center">7</td>
+                                        <td><img src="{% static 'images/availableitems/item_7.jpg' %}" alt="" width="75"></td>
+                                        <td>Palak Paneer (Spinach and Cottage Cheese)</td>
+                                        <td align="center"><a href="/PalakPaneer/availableitem" style="color:Darkgreen">View</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center">8</td>
+                                        <td><img src="{% static 'images/availableitems/item_8.jpg' %}" alt="" width="75"></td>
+                                        <td>Naan (Leavened Indian Flatbread)</td>
+                                        <td align="center"><a href="/Naan/availableitem" style="color:Darkgreen">View</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center">9</td>
+                                        <td><img src="{% static 'images/availableitems/item_9.jpg' %}" alt="" width="75"></td>
+                                        <td>Alu Gobi</td>
+                                        <td align="center"><a href="/Alugobi/availableitem" style="color:Darkgreen">View</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center">10</td>
+                                        <td><img src="{% static 'images/availableitems/item_10.jpg' %}" alt="" width="75"></td>
+                                        <td>Kaali Daal (Black Lentils)</td>
+                                        <td align="center"><a href="/KaaliDaal/availableitem" style="color:Darkgreen">View</a></td>
+                                    </tr>
+                            </table>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- banner part start-->
+<!--<section class="exclusive_item_part blog_item_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-5">
+                    <div class="section_tittle">
+                        <h2>Our Exclusive Items</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-lg-4">
+                    <div class="single_blog_item">
+                        <div class="single_blog_img">
+                            <marquee><img src="{% static 'images/food_item/food_item_1.jpg' %}" alt=""></marquee>
+                        </div>
+                        <div class="single_blog_text">
+                            <h3>Indian Burger</h3>-->
+                            <!--<p>Was brean shed moveth day yielding tree yielding day were female and </p>
+                            <a href="#" class="btn_3">Read More <img src="{% static 'images/icon/left_2.svg' %}" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="single_blog_item">
+                        <div class="single_blog_img">
+                            <marquee><img src="{% static 'images/food_item/food_item_2.jpg' %}" alt=""></marquee>
+                        </div>
+                        <div class="single_blog_text">
+                            <h3>Cremy Gulab Jamun</h3>
+                            <!--<p>Was brean shed moveth day yielding tree yielding day were female and </p>
+                            <a href="#" class="btn_3">Read More <img src="{% static 'images/icon/left_2.svg' %}" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="single_blog_item">
+                        <div class="single_blog_img">
+                            <marquee><img src="{% static 'images/food_item/food_item_3.jpg' %}" alt=""> </marquee>
+                        </div>
+                        <div class="single_blog_text">
+                            <h3>Fired Chicken</h3>
+                            <!--<p>Was brean shed moveth day yielding tree yielding day were female and </p>
+                            <a href="#" class="btn_3">Read More <img src="{% static 'images/icon/left_2.svg' %}" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <!--<div class="col-sm-6 col-lg-4 d-none d-sm-block d-lg-none">
+                    <div class="single_blog_item">
+                        <div class="single_blog_img">
+                            <img src="{% static 'images/food_item/food_item_1.jpg' %}" alt="">
+                        </div>
+                        <div class="single_blog_text">
+                            <h3>Cremy Noodles</h3>
+                            <p>Was brean shed moveth day yielding tree yielding day were female and </p>
+                            <a href="#" class="btn_3">Read More <img src="{% static 'images/icon/left_2.svg' %}" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>-->
+
+{% endblock %}

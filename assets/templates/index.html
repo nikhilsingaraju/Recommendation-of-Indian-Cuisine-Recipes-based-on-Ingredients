@@ -1,0 +1,112 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block contents %}
+
+ <!-- banner part start-->
+    <section class="banner_part">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="banner_text">
+                        <div class="banner_text_iner">
+                            <h2><b>Recommendation of Indian Cuisine Recipes based on Ingredients</b></h2>
+                            <p>There are lots of varieties of Indian cuisine available with same ingredients. In India, Traditional cuisines
+                                consist of wide varieties due to locally available spices, herbs, vegetables, and fruits. In this paper, we purposed a method that
+                                recommends recipes of Indian cuisine on the basis of available ingredients and liked cuisine. For this work, we did web
+                                scraping to make a collection of recipes' varieties and after that apply the content-based approach of machine learning to
+                                recommend the recipes. This system gives the recommendation of Indian Cuisines based on ingredients.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- banner part start-->
+
+    <!--::exclusive_item_part start::-->
+    <section class="exclusive_item_part blog_item_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-5">
+                    <div class="section_tittle">
+                        <h2>Our Exclusive Items</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-lg-4">
+                    <div class="single_blog_item">
+                        <div class="single_blog_img">
+                            <marquee><img src="{% static 'images/food_item/food_item_1.jpg' %}" alt=""></marquee>
+                        </div>
+                        <div class="single_blog_text">
+                            <h3>Indian Burger</h3>
+                            <!--<p>Was brean shed moveth day yielding tree yielding day were female and </p>
+                            <a href="#" class="btn_3">Read More <img src="{% static 'images/icon/left_2.svg' %}" alt=""></a>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="single_blog_item">
+                        <div class="single_blog_img">
+                            <marquee><img src="{% static 'images/food_item/food_item_2.jpg' %}" alt=""></marquee>
+                        </div>
+                        <div class="single_blog_text">
+                            <h3>Cremy Gulab Jamun</h3>
+                            <!--<p>Was brean shed moveth day yielding tree yielding day were female and </p>
+                            <a href="#" class="btn_3">Read More <img src="{% static 'images/icon/left_2.svg' %}" alt=""></a>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="single_blog_item">
+                        <div class="single_blog_img">
+                            <marquee><img src="{% static 'images/food_item/food_item_3.jpg' %}" alt=""> </marquee>
+                        </div>
+                        <div class="single_blog_text">
+                            <h3>Fired Chicken</h3>
+                            <!--<p>Was brean shed moveth day yielding tree yielding day were female and </p>
+                            <a href="#" class="btn_3">Read More <img src="{% static 'images/icon/left_2.svg' %}" alt=""></a>-->
+                        </div>
+                    </div>
+                </div>
+                <!--<div class="col-sm-6 col-lg-4 d-none d-sm-block d-lg-none">
+                    <div class="single_blog_item">
+                        <div class="single_blog_img">
+                            <img src="{% static 'images/food_item/food_item_1.jpg' %}" alt="">
+                        </div>
+                        <div class="single_blog_text">
+                            <h3>Cremy Noodles</h3>
+                            <p>Was brean shed moveth day yielding tree yielding day were female and </p>
+                            <a href="#" class="btn_3">Read More <img src="{% static 'images/icon/left_2.svg' %}" alt=""></a>
+                        </div>
+                    </div>
+                </div>-->
+            </div>
+        </div>
+    </section>
+    <!--::exclusive_item_part end::-->
+
+    <!-- about part start-->
+    <section class="about_part">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-sm-4 col-lg-5 offset-lg-1">
+                    <div class="about_img">
+                        <img src="{% static 'images/about.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-sm-8 col-lg-4">
+                    <div class="about_text">
+                        <!--<h5>Our History</h5>-->
+                        <h2>The most interesting food in the world..</h2>
+                        <h4>Deliciousness jumping into the mouth</h4>
+                        <!--<h1>Deliciousness jumping into the mouth</h1>
+                        <a href="#" class="btn_3">Read More <img src="{% static 'images/icon/left_2.svg' %}" alt=""></a>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about part end-->
+{% endblock %}

@@ -1,0 +1,41 @@
+{% extends 'managerbase.html'%}
+
+{% block contents %}
+
+<!-- banner part start-->
+    <section class="banner_part">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="banner_text">
+                        <div class="banner_text_iner">
+                               <h2><b>Manager View the Food Items</b></h2>
+                                    <table border="2px">
+                                            <tr>
+                                                <th>S.No</th>
+                                                <th>Recipes</th>
+                                                <th>Ingredients</th>
+                                                <th>Description</th>
+                                                <th>Videos</th>
+                                            </tr>
+                                            {% for i in object %}
+                                            <tr>
+                                            <td style="color:brown">{{i.id}}</td>
+                                            <td style="color:brown">{{i.recipename}}</td>
+                                            <td style="color:brown">{{i.ingredients}}</td>
+                                            <td style="color:brown">{{i.description}}</td>
+                                            <td style="color:brown">{{i.file}}</td>
+                                            </tr>
+                                            {% endfor %}
+
+                                    </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- banner part start-->
+
+
+{% endblock %}

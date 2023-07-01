@@ -1,0 +1,35 @@
+{% extends 'base.html'%}
+
+{% block contents %}
+
+<!-- banner part start-->
+    <section class="banner_part">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="banner_text">
+                        <div class="banner_text_iner">
+                            <h2><b>Manager Login</b></h2>
+                            <p>
+                             <form action="{% url 'managerloginaction' %}"  method="POST" >
+                                {% csrf_token %}
+                                <table><tr><td style="color:blue">
+                                    UserName  <input  type="text" name="username" placeholder="Manager Login Id" ><br/><br/>
+                                    Password <input  type="password" name="password" placeholder="Password" ><br/><br/>
+                                </td></tr></table> <button  type="submit" style="color:#FF4500">Login</button><br/>
+                            </form>
+                            {% if messages %}
+                                {% for message in messages %}
+                                    <font color='darkred'> {{ message }}</font>
+                                {% endfor %}
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- banner part start-->
+
+
+{% endblock %}

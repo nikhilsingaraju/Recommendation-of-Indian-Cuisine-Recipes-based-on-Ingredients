@@ -1,0 +1,50 @@
+{% extends 'foodcourtbase.html'%}
+{% load static %}
+{% block contents %}
+
+<!-- banner part start-->
+    <section class="banner_part">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="banner_text">
+                        <div class="banner_text_iner">
+                            {% block content_header %}
+                                <h2><b>Food item</h2>
+                                <p>
+                                    <a href="{% url 'additems' %}" >Add fooditems</a>
+                                </p>
+                            {% endblock %}
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Recipes</th>
+                                        <th>Ingredients</th>
+                                        <th>Description</th>
+                                        <th>videos</th>
+                                        <th>Download</th>
+
+                                    </tr>
+                                </thead>
+                                {% for i in object %}
+                                <tr>
+                                    <td>{{ i.recipename }}</td>
+                                    <td>{{ i.ingredients }}</td>
+                                    <td>{{ i.description }}</td>
+                                    <td>{{ i.file }}</td>
+                                    <td>
+                                        <a href="{{ i.pdf.url }}" >Download</a>
+                                    </td>
+                                </tr>
+                                {% endfor %}
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- banner part start-->
+
+
+{% endblock %}

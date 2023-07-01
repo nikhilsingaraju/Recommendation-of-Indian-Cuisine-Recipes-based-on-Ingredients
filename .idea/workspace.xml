@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5fb81abf-0923-4e17-b0b8-f767ff29ee0e" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>blog</find>
+      <find>boo</find>
+      <find>book</find>
+      <find>menu_btn</find>
+      <find>tit</find>
+      <find>url</find>
+      <find>container</find>
+      <find>banner</find>
+      <find>--&gt;</find>
+    </findStrings>
+  </component>
+  <component name="ProjectId" id="1UCpTWFw6Ab4hIQ3obvON7UXG43" />
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../10 Autonomous Machine Learning Modeling using a Task Ontology/Codes/Taskontology" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Python Projects\Indiancuisinerecipes\training_dataset" />
+      <recent name="F:\Python Projects\Indiancuisinerecipes" />
+      <recent name="F:\Python Projects\Indiancuisinerecipes\assets\static\images\items" />
+      <recent name="F:\Python Projects\Indiancuisinerecipes\assets\static\images\availableitems" />
+      <recent name="F:\Python Projects\Indiancuisinerecipes\assets\static\images\food_item" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5fb81abf-0923-4e17-b0b8-f767ff29ee0e" name="Default Changelist" comment="" />
+      <created>1565688086545</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1565688086545</updated>
+    </task>
+    <servers />
+  </component>
+</project>

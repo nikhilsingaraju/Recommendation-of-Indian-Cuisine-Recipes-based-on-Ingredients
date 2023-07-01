@@ -1,0 +1,58 @@
+{% extends 'managerbase.html'%}
+
+{% block contents %}
+
+<!-- banner part start-->
+    <section class="banner_part">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="banner_text">
+                        <div class="banner_text_iner">
+                               <h2><b>Manager View the Customer Details</b></h2>
+                                <table border="2px">
+                                <tr>
+                                    <th>S.No</th>
+                                    <th>FirstName</th>
+                                    <th>LastName</th>
+                                    <th>LoginName</th>
+                                    <th>Email</th>
+                                    <th>Mobile</th>
+                                    <th>Address</th>
+                                    <th>State</th>
+                                    <th>AuthKey</th>
+                                    <th>Status</th>
+                                    <th>Activate</th>
+                                </tr>
+                                {% for i in object %}
+                                <tr>
+                                    <td style="color:brown">{{i.id}}</td>
+                                    <td style="color:brown">{{i.first_name}}</td>
+                                    <td style="color:brown">{{i.last_name}}</td>
+                                    <td style="color:darkolivegreen">{{i.loginid}}</td>
+                                    <td style="color:brown">{{i.email}}</td>
+                                     <td style="color:brown">{{i.mobile}}</td>
+                                    <td style="color:brown">{{i.address}}</td>
+                                    <td style="color:brown">{{i.state}}</td>
+                                    <td style="color:brown">{{i.authkey}}</td>
+                                    <td style="color:darkblack">{{i.status}}</td>
+
+                                    {% if i.status == 'waiting' %}
+                                    <td> <a href="/activatecustomer/?usid={{ i.id }}">Activate</a></td>
+                                    {% else %}
+                                    <td style="color:darkblack"> Activated</td>
+                                    {% endif %}
+                                </tr>
+                                    {% endfor %}
+
+                                </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- banner part start-->
+
+
+{% endblock %}

@@ -1,0 +1,53 @@
+{% extends 'customerbase.html'%}
+{% load static %}
+{% block contents %}
+
+<!-- banner part start-->
+    <section class="banner_part">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="banner_text">
+                        <div class="banner_text_iner">
+                                <h2><b>Enter Ingredients<b></b></h2>
+                            <p>Search Recipes base upon the Ingredients</p>
+                            <form action="{% url 'ingredientsanalysis' %}" method="POST" >
+                                    {% csrf_token %}
+                                    <textarea name="ingredients" rows="5" cols="70" required></textarea>
+                                    <input type="hidden" name="loginid" value="{{request.session.customerid}}">
+                                    <br/>
+                                    <button type="submit">Send</button>
+                            </form>
+                            {% if messages %}
+                                {% for message in messages %}
+                                    <font color='darkblue'> {{ message }}</font>
+                                {% endfor %}
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- banner part start--><br><br>
+<div>
+<marquee><img src="{% static 'images/food_item/food_item_2.jpg' %}" alt="" width="150">
+    <img src="{% static 'images/items/items_1.jpg' %}" alt="" width="150">
+    <img src="{% static 'images/items/items_2.jpg' %}" alt="" width="150">
+    <img src="{% static 'images/items/items_3.jpg' %}" alt="" width="150">
+    <img src="{% static 'images/items/items_4.jpg' %}" alt="" width="150">
+    <img src="{% static 'images/items/items_5.jpg' %}" alt="" width="100">
+    <img src="{% static 'images/items/items_6.jpg' %}" alt="" width="120">
+    <img src="{% static 'images/items/items_7.jpg' %}" alt="" width="100">
+    <img src="{% static 'images/items/items_8.jpg' %}" alt="" width="100">
+    <img src="{% static 'images/items/items_9.jpg' %}" alt="" width="80">
+    <img src="{% static 'images/items/items_10.jpg' %}" alt="" width="80">
+    <img src="{% static 'images/items/items_11.jpg' %}" alt="" width="100">
+    <img src="{% static 'images/items/items_12.jpg' %}" alt="" width="150">
+    <img src="{% static 'images/items/items_13.jpg' %}" alt="" width="150">
+    <img src="{% static 'images/items/items_14.jpg' %}" alt="" width="150">
+    <img src="{% static 'images/items/items_15.jpg' %}" alt="" width="150"></marquee>
+</div>
+
+
+    {% endblock %}

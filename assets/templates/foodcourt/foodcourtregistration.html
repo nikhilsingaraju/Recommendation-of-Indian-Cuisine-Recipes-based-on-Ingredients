@@ -1,0 +1,42 @@
+{% extends 'base.html'%}
+
+{% block contents %}
+
+<!-- banner part start-->
+    <section class="banner_part">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="banner_text">
+                        <div class="banner_text_iner">
+                            <h2><b>Food Court Registration</b></h2>
+                             <form method="POST" action="{% url 'foodcourtregistration' %}">
+                                {% csrf_token %}
+                                <table>
+                                    <tr><td style="color:blue">Last Name</td><td >{{form.name}}</td></tr>
+                                    <tr><td style="color:blue">Login ID</td><td>{{form.loginid}}</td></tr>
+                                    <tr><td style="color:blue">Password</td><td>{{form.password}}</td></tr>
+                                    <tr><td style="color:blue">Email</td><td>{{form.email}}</td></tr>
+                                    <tr><td style="color:blue">Mobile</td><td>{{form.mobile}}</td></tr>
+                                    <tr><td style="color:blue">Address</td><td>{{form.address}}</td></tr>
+                                    <tr><td></td><td>{{form.authkey}}</td></tr>
+                                    <tr><td></td><td>{{form.status}}</td></tr>
+                                    <tr><td><button type="submit" style="color:#FF4500">Submit</button></td>
+                                    <td><button type="reset" style="color:#FF4500">Reset</button> </td></tr>
+                                </table>
+                            </form>
+                            {% if messages %}
+                                {% for message in messages %}
+                                    <font color='darkred'> {{ message }}</font>
+                                {% endfor %}
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- banner part start-->
+
+
+{% endblock %}
